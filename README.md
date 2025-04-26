@@ -1,34 +1,29 @@
-# React Weather App 🌦️
+# React Tic Tac Toe 🎮
 
-A modern, highly performant weather app built with **React 19**, **Bootstrap**, and **OpenWeather API**. This app provides real-time weather updates for any location with a clean and visually appealing user interface.
+A fun and interactive **Tic Tac Toe** game built with **React**. This project demonstrates the use of React components, state management, and responsive design to create a classic game with a modern twist.
 
 ---
 
 ## Features 🚀
 
-- **Real-time Weather Updates**: Fetch current weather conditions for any city using the [OpenWeather API](https://openweathermap.org/).
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
-- **SEO Optimized**: Built with `react-helmet` for best search engine visibility.
-- **Dynamic Weather Themes**: Changes card design based on weather conditions (e.g., sunny, rainy, cloudy).
-- **Loading Spinner**: Interactive growing spinner for a seamless loading experience.
-- **Error Handling**: Displays user-friendly error messages for invalid city queries.
-- **Footer Section**: A modern footer with credits and API source.
+- **Interactive Gameplay**: Play the classic Tic Tac Toe game with a clean and responsive UI.
+- **Winner Celebration**: Confetti animation for the winner.
+- **Reset Option**: Restart the game anytime with a single click.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- **Social Links**: Footer with links to the developer's social profiles.
 
 ---
 
 ## Demo 🎥
 
-🚀 Check out the live demo: [React Weather App Demo](#)
+🚀 Check out the live demo: [Tic Tac Toe Game Demo](#)
 
 ---
 
 ## Screenshots 🖼️
 
-### Home Page
-![Home Page](https://via.placeholder.com/800x400)
-
-### Weather Details
-![Weather Card](https://via.placeholder.com/800x400)
+### Game Board
+![Game Board](https://via.placeholder.com/800x400)
 
 ---
 
@@ -43,66 +38,59 @@ Follow these steps to set up the project on your local machine:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/react-weather-app.git
+   git clone https://github.com/YourUsername/tic-tac-toe.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd react-weather-app
+   cd tic-tac-toe
    ```
 3. Install dependencies:
    ```bash
    npm install
    ```
-4. Add your **OpenWeather API Key** to the `.env` file:
-   ```bash
-   REACT_APP_WEATHER_API_KEY=your_api_key_here
-   ```
-5. Start the development server:
+4. Start the development server:
    ```bash
    npm start
    ```
-6. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
-
----
-
-## Technologies Used 🛠️
-
-- **React 19**: Modern JavaScript library for building user interfaces.
-- **Bootstrap**: For responsive design and UI components.
-- **Axios**: For making API requests.
-- **react-helmet**: For SEO optimization.
-- **OpenWeather API**: To fetch real-time weather data.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to play the game.
 
 ---
 
 ## Folder Structure 📂
 
 ```
-weather-app/
+tic-tac-toe/
 ├── public/
 │   ├── index.html   # HTML template
 ├── src/
 │   ├── components/
-│   │   ├── Header.js        # Header component
-│   │   ├── Footer.js        # Footer component
-│   │   ├── WeatherCard.js   # Weather card component
-│   ├── pages/
-│   │   ├── Home.js          # Main page of the app
-│   ├── App.js               # Root component
-│   ├── index.js             # Entry point
-│   ├── styles.css           # Global styles
-├── .env                     # Environment variables (API Key)
-├── package.json             # Project metadata and dependencies
+│   │   ├── Board.js        # Board component
+│   │   ├── Game.js         # Game logic component
+│   │   ├── Square.js       # Individual square component
+│   ├── App.js              # Root component
+│   ├── index.js            # Entry point
+│   ├── App.css             # Game styles
+│   ├── index.css           # Global styles
+├── package.json            # Project metadata and dependencies
 ```
 
 ---
 
-## Footer 📄
+## Technologies Used 🛠️
 
-The app includes a footer component that displays:
-- **Credits**: Highlighting the developer's name.
-- **API Attribution**: Acknowledges the OpenWeather API as the data source.
-- **Links**: Includes clickable links to the developer's GitHub profile and the OpenWeather website.
+- **React**: Modern JavaScript library for building user interfaces.
+- **React Confetti**: For winner celebration animation.
+- **CSS**: For responsive and visually appealing design.
+
+---
+
+## How to Play 🎲
+
+1. The game starts with Player X.
+2. Click on any square to make your move.
+3. Alternate turns between Player X and Player O.
+4. The first player to align three symbols in a row, column, or diagonal wins.
+5. Click the **Reset Game** button to start a new game.
 
 ---
 
@@ -129,15 +117,7 @@ Contributions are welcome! If you'd like to contribute to this project, follow t
 
 ## License 📄
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgements 🙌
-
-- [OpenWeather API](https://openweathermap.org/) for providing weather data.
-- [Bootstrap](https://getbootstrap.com/) for responsive design components.
-- [React.js](https://reactjs.org/) for the amazing frontend framework.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -146,4 +126,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 If you have any questions or feedback, feel free to contact me:
 
 - **GitHub**: [FarhadAliTurk](https://github.com/FarhadAliTurk)
-- **Email**: your-email@example.com
+- **Email**: [369farhadali@gmail.com](mailto:369farhadali@gmail.com)

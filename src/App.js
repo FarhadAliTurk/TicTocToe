@@ -1,27 +1,58 @@
-import React from "react";
-import { Helmet } from "react-helmet"; // SEO optimization
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import "./App.css";
+import React from 'react';
+import Game from './components/Game';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div className="app-container">
-      <Helmet>
-        <title>React Weather App</title>
-        <meta
-          name="description"
-          content="A modern React weather app for real-time weather updates."
-        />
-      </Helmet>
-      <Header />
-      <main className="main-content">
-        <Home />
+    <div className="app">
+      <header className="app-header">
+        <h1>Tic Tac Toe</h1>
+      </header>
+      <main>
+        <Game />
       </main>
-      <Footer />
+      <footer>
+        <div className="social-icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=61551771230717&mibextid=ZbWKwL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon facebook"
+            aria-label="Facebook"
+          >
+            <i className="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/farhad-ali-turk-135369305"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon linkedin"
+            aria-label="LinkedIn"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/FarhadAliTurk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon github"
+            aria-label="GitHub"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="mailto:369farhadali@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon email"
+            aria-label="Email"
+          >
+            <i className="fas fa-envelope"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   );
-};
+}
 
 export default App;
